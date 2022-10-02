@@ -1,0 +1,22 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  /* Hack */
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
